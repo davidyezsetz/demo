@@ -39,9 +39,6 @@ gulp.task('sass', () =>
     .pipe($.sass({
       includePaths: sassPaths,
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer({
-      browsers: ['last version'],
-    }))
     .pipe(gulp.dest('css'))
     .pipe(connect.reload())
 );
