@@ -1,0 +1,22 @@
+{
+  "name": "landing_page",
+  "version": "1.0.0",
+  "description": "minimalistic landing page demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidyezsetz/demo.git"
+  },
+  "author": "David Setz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidyezsetz/demo/issues"
+  },
+  "homepage": "https://github.com/davidyezsetz/demo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
