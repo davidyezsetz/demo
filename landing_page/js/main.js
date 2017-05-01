@@ -30,7 +30,7 @@ class Countdown {
       this.seconds = 60;
       this.reduceMinutes();
     }
-    this.secondsNode.innerHTML = this.seconds;
+    this.secondsNode.innerHTML = (this.seconds > 9) ? this.seconds : '0' + this.seconds;
   }
 
   reduceMinutes() {
@@ -40,7 +40,7 @@ class Countdown {
       this.minutes = 60;
       this.reduceHours();
     }
-    this.minutesNode.innerHTML = this.minutes;
+    this.minutesNode.innerHTML = (this.minutes > 9) ? this.minutes : '0' + this.minutes;
   }
 
   reduceHours() {
@@ -50,7 +50,7 @@ class Countdown {
       this.hours = 24;
       this.reduceDays();
     }
-    this.hoursNode.innerHTML = this.hours;
+    this.hoursNode.innerHTML = (this.hours > 9) ? this.hours : '0' + this.hours;
   }
 
   reduceDays() {
@@ -60,8 +60,9 @@ class Countdown {
       clearInterval(this.counter);
     }
     this.daysNode.innerHTML = this.days;
+    this.daysNode.innerHTML = (this.days > 9) ? this.days : '0' + this.days;
   }
 }
 
-const countdown = new Countdown(120, 3, 1, 52);
+const countdown = new Countdown(120, 3, 6, 52);
 countdown.start();
