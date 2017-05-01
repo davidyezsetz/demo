@@ -1,0 +1,35 @@
+.countdown {
+  display: block;
+  padding: 0 70px 37px 22px;
+  border: 2px solid #2a76b0;
+  border-radius: 22px;
+  color: #fff;
+  font-family: serif;
+  font-size: 136px;
+  letter-spacing: -3px;
+
+  &__digit {
+    position: relative;
+  }
+
+  &__unit {
+    position: absolute;
+    bottom: -20px;
+    right: 45px;
+    font-size: 26px;
+    letter-spacing: initial;
+    text-transform: uppercase;    
+  }
+
+  &__digit:nth-child(5) &__unit {
+    right: 22px;
+  }
+
+  &__digit:nth-child(7) &__unit {
+    right: -5px;
+  }
+
+  &__separator {
+    position: relative;
+  }
+}

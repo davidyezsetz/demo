@@ -5,6 +5,160 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>Green body</h1>
+    <!-- visual guide <img src="images/proprietary/demo.jpeg" style="position: absolute;opacity: 0.2;transform: translateX(-50%);left: 50%;display:none;z-index:10;"> -->
+    <header class="main-header">
+      <div class="main-header__gradient"></div>
+      <div class="main-content">
+        <img src="images/proprietary/logo_a.png" alt="logo">
+        <nav class="meta-nav">
+          <ul class="meta-nav__list">
+            <li class="meta-nav__entry"><a class="meta-nav__link" href="#">Event details</a></li>
+            <li class="meta-nav__entry"><a class="meta-nav__link" href="#">Speakers</a></li>
+          </ul>
+        </nav>
+        <h1 class="main-logo">
+          <img class="main-logo__inner" src="images/proprietary/logo_main.png">
+        </h1>
+        <time class="main-content__inset countdown">
+          <span class="countdown__digit">
+            120
+            <span class="countdown__unit">days</span>
+          </span>
+          <span class="countdown__separator">:</span>
+          <span class="countdown__digit">
+            03
+            <span class="countdown__unit">hours</span>
+          </span>
+          <span class="countdown__separator">:</span>
+          <span class="countdown__digit">
+            06
+            <span class="countdown__unit">minutes</span>
+          </span>
+          <span class="countdown__separator">:</span>
+          <span class="countdown__digit">
+            52
+            <span class="countdown__unit">seconds</span>
+          </span>
+        </time>
+      </div>
+    </header>
+    <main>
+      <section class="background-tilted" aria-labelledby="intro-headline">
+        <div class="main-content">
+          <div class="intro">
+            <h2 class="section-headline" id="intro-headline">Welcome!</h2>
+            <p class="copy-text">Aperiam quia voluptatibus minima architecto, voluptatem, magni eum. Ad voluptatum, <strong>unde dolor consequuntur</strong> eveniet rem quidem.</p>
+            <p class="copy-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore reiciendis ipisicing elit.cupiditate nostrum modi distinctio cumque praesentium quos commodi aperiam quia voluptatibus minima architecto, voluptatem, magni eum. Ad voluptatum, unde dolor consequuntur eveniet rem quidem.</p>
+            <p class="copy-text">Consectetur adipisicing elit.cupiditate <strong>nostrum modi distinctio neque</strong> laudantium eiciendis cumque praesentium quos commodi aperiam quia voluptatibus minima  iste, omnis at.</p>
+          </div>
+          <form class="sign-up">
+            <h3 class="element-headline">Sign up for our big event</h3>
+            <input class="sign-up__input" type="text" placeholder="Enter your name" required>
+            <input class="sign-up__input" type="email" placeholder="Enter your email" required>
+            <input class="sign-up__input" type="tel" placeholder="Phone number" required pattern="^(?:0|\(?\+49\)?\s?|0049\s?)[1-9]*">
+            <button class="sign-up__button">Let me in!</button>
+            <p class="sign-up__footnote">Hurry up, Limited seats available<br>*we will nerver spam your email</p>
+          </form>
+          <table class="timetable">
+            <tr class="timetable__row">
+              <th class="timetable__column timetable__column--small timetable__column--head">
+                <h3 class="element-headline">Time</h3>
+              </th>
+              <th class="timetable__column timetable__column--big timetable__column--head">
+                <h3 class="element-headline">Stuff that will happen</h3>
+              </th>
+            </tr>
+            <tr class="timetable__row">
+              <td class="timetable__column timetable__column--small">
+                10am - 12pm
+              </td>
+              <td class="timetable__column timetable__column--big">
+                <div class="accordeon">Introduction and presentations about DCX</div>
+              </td>
+            </tr>
+            <tr class="timetable__row">
+              <td class="timetable__column timetable__column--small">
+                12pm - 02pm
+              </td>
+              <td class="timetable__column timetable__column--big">
+                <div class="accordeon">Sessions by honorable guests and Speakers</div>
+              </td>
+            </tr>
+            <tr class="timetable__row">
+              <td class="timetable__column timetable__column--small">
+                02pm - 03pm
+              </td>
+              <td class="timetable__column timetable__column--big">
+                <div class="accordeon">Break and Mingle time with authors</div>
+              </td>
+            </tr>
+            <tr class="timetable__row">
+              <td class="timetable__column timetable__column--small">
+                03pm - 05pm
+              </td>
+              <td class="timetable__column timetable__column--big">
+                <div class="accordeon">Portfolio Review, Rewards and Ending Presentation</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="main-content" aria-labelledby="speakers-headline">
+        <div class="main-content__inset">
+          <h2 class="section-headline" id="speakers-headline">Speakers</h2>
+          <p class="copy-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ex ea voluptas, tempore. Incidunt, et explicabo quibusdam, placeat, cupiditate laboriosam quasi unde quis, velit fuga harum porro necessitatibus a. Iste?</p>
+          <div class="speaker__wrapper">
+            <div class="speaker speaker--horizontal">
+              <div class="speaker__visual">
+                <img width="298px" height="298px" src="images/proprietary/speaker_a.png" alt="Shahriyer Shuvo">
+              </div>
+              <div class="speaker__body">
+                <p class="speaker__headline">Shahriyer Shuvo</p>
+                <p class="speaker__copy">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <p class="speaker__logo">Brand a</p>
+              </div>
+            </div>
+            <div class="speaker speaker--vertical speaker--top-right">
+              <div class="speaker__visual">
+                <img width="298px" height="298px" src="images/proprietary/speaker_b.png" alt="Shahriyer Shuvo">
+              </div>
+              <div class="speaker__body">
+                <p class="speaker__headline">Shahriyer Shuvo</p>
+                <p class="speaker__copy">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <p class="speaker__logo">Brand b</p>
+              </div>
+            </div>
+            <div class="speaker speaker--vertical speaker--visual-bottom">
+              <div class="speaker__visual">
+                <img width="298px" height="298px" src="images/proprietary/speaker_c.png" alt="Shahriyer Shuvo">
+              </div>
+              <div class="speaker__body">
+                <p class="speaker__headline">Shahriyer Shuvo</p>
+                <p class="speaker__copy">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <p class="speaker__logo">Brand c</p>
+              </div>
+            </div>
+            <div class="speaker speaker--horizontal speaker--visual-right speaker--bottom-right">
+              <div class="speaker__visual">
+                <img width="298px" height="298px" src="images/proprietary/speaker_d.png" alt="Shahriyer Shuvo">
+              </div>
+              <div class="speaker__body">
+                <p class="speaker__headline">Shahriyer Shuvo</p>
+                <p class="speaker__copy">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                <p class="speaker__logo">Brand d</p>
+              </div>
+            </div>
+            <img class="speaker-logo" width="173" height="216" src="images/proprietary/logo_b.png">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div>
+        <a class="secondary-logo secondary-logo--a" href="#"><img src="images/proprietary/logo_c.png" alt="logo"></a>
+        <a class="secondary-logo secondary-logo--b" href="#"><img src="images/proprietary/logo_d.png" alt="logo"></a>
+      </div>
+      <p class="main-footer__claim">People matter, results count.</p>
+    </footer>
   </body>
 </html>

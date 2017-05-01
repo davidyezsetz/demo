@@ -1,0 +1,56 @@
+$sign-up-grey: #aaa;
+$sign-up-border-radius: 10px;
+
+.sign-up {
+  position: absolute;
+  top:  -205px;
+  right: 0;
+  padding: 30px 25px 25px;
+  width: 430px;
+  border: 1px solid #ccc;
+  border-right: 0;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5);
+  background: #fff;
+  text-align: center;
+
+  &__input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 17px 10px 16px;
+    width: 100%;
+    border: 2px solid $sign-up-grey;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 19px;
+    transition: border-color .2s ease-in-out;
+
+    &:focus {
+      border-color: #2f92bd;
+    }
+    
+  }
+
+  &__button {
+    margin: 20px 0;
+    padding: 18px 0 17px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    background: $primary-color;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+
+    &:hover, &:focus, &:active {
+      background:#2f92bd;
+    }
+  }
+
+  &__footnote {
+    margin: 0;
+    color: $sign-up-grey;
+    font-size: 14px;
+  }
+}

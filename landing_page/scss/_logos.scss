@@ -1,0 +1,31 @@
+.main-logo {
+  margin: 0 0 40px;
+  color: #fff;
+  text-align: center;
+
+  &__inner {
+    position: relative;
+    left: -5px;
+    top: -6px;
+  }
+}
+
+.secondary-logo {
+  position: relative;
+
+  &--a {
+    left: 20px;
+  }
+
+  &--b {
+    top: -6px;
+    left: 58px;
+  }
+}
+
+.speaker-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,105 @@
+
+$speaker-visual-width: 298px;
+$speaker-body-width: 337px;
+
+.speaker {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 40px;
+  border-radius: 20px;
+
+  &__wrapper {
+    position: relative; 
+    margin: 70px 0 105px;
+  }
+
+  &__body {
+    position: relative;
+    background: #09729c;
+    color: #fff;
+  }
+
+  &--vertical &__body {
+    margin-left: 1px;
+    padding: 65px 20px 113px;
+  }
+
+  &--top-right &__body {
+    padding: 51px 20px 127px;
+  }
+
+  &--horizontal &__body {
+    margin: 1px 0;
+    padding: 32px 35px 0 35px;
+  }
+
+  &__visual {
+    
+    img {
+      display: block;
+    }
+  }
+
+  &__headline {
+    position: relative;
+    margin: 0 0 25px;
+    font-size: 45px;
+    line-height: 1;
+
+    &:after {
+      position: absolute;
+      bottom: -11px;
+      left: 0;
+      width: 82px;
+      height: 5px;
+      background: #fff;
+      content: "";
+    }
+  }
+
+  &__copy {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  &__logo {
+    position: absolute;
+    margin: 0;
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+
+  &--vertical &__logo {
+    bottom: 34px;
+  }
+
+  &--horizontal &__logo {
+    bottom: 18px;
+  }
+
+  &--vertical {
+    flex-wrap: wrap;
+    width: $speaker-visual-width - 1px;
+  }
+
+  &--horizontal {
+    width: $speaker-body-width + $speaker-visual-width;
+  }
+
+  &--visual-right &__visual, &--visual-bottom &__visual {
+    order: 2;      
+  }
+
+  &--top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0;
+  }
+}
