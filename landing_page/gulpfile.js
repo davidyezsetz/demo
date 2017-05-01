@@ -49,4 +49,6 @@ gulp.task('watch', ['sass', 'html', 'js'], () => {
   gulp.watch(['js/**/*.js'], ['js']);
 });
 
+gulp.task('build', ['sass']);
+
 gulp.task('default', ['sass', 'webserver', 'watch']);
